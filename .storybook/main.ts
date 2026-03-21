@@ -10,6 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "storybook-addon-test-codegen",
     "@storybook/addon-vitest",
+    "@storybook/addon-mcp"
   ],
   framework: "@storybook/react-vite",
   staticDirs: ["../public", "../public/images"],
