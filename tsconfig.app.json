@@ -23,12 +23,11 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@styles/*": ["./src/styles/*"],
-      "@components/*": ["./src/components/*"],
-    },
+      "@components/*": ["./src/components/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src"]
 }

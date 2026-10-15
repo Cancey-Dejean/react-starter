@@ -2,6 +2,7 @@ import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
   addons: [
     "@chromatic-com/storybook",
     "@storybook/addon-docs",
@@ -10,9 +11,15 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "storybook-addon-test-codegen",
     "@storybook/addon-vitest",
-    "@storybook/addon-mcp"
+    "@storybook/addon-mcp",
   ],
+
   framework: "@storybook/react-vite",
   staticDirs: ["../public", "../public/images"],
+
+  features: {
+    experimentalReview: true,
+    experimentalDocgenServer: true,
+  },
 };
 export default config;
